@@ -21,7 +21,8 @@ public class MainProg {
 //creation instance Abonnement        
 Abonnement A1 = new Abonnement(" Blue Pass-Sport",java.sql.Date.valueOf("2023-05-15"),java.sql.Date.valueOf("2023-08-15"),350f ,2);
  ServiceAbonnement sa = new ServiceAbonnement();
-  // sa.ajouter(A1);
+  
+   sa.ajouter(A1);
  // System.out.println(sa.afficher()); 
   //sa.modifier(new Abonnement(8,"Yelow Pass-Sport",java.sql.Date.valueOf("2023-05-16"),java.sql.Date.valueOf("2023-09-16"),350f ,6)); //la deuxieme date est incorreste??
  //System.out.println(sa.afficher()); 
@@ -29,7 +30,7 @@ Abonnement A1 = new Abonnement(" Blue Pass-Sport",java.sql.Date.valueOf("2023-05
  // System.out.println(sa.afficher()); 
          
        ServiceCategorie sc = new ServiceCategorie();
-        //sc.ajouter(new Categorie("accessoires"));
+       sc.ajouter(new Categorie("accessoires"));
        //System.out.println(sc.afficher());
         //sc.modifier(new Categorie(3,"proteines"));
       //  System.out.println(sc.afficher());
@@ -39,7 +40,7 @@ Abonnement A1 = new Abonnement(" Blue Pass-Sport",java.sql.Date.valueOf("2023-05
        
        
        ServiceProduit sp = new ServiceProduit();
-      // sp.ajouter(new Produit("Gant de box",100f,2));
+      sp.ajouter(new Produit("Gant de box",100f,2));
      // System.out.println(sp.afficher());
       // sp.modifier(new Produit(5,"cap",50f,6));
       // System.out.println(sp.afficher());
